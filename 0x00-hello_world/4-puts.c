@@ -1,4 +1,4 @@
-#include<iostream>
+#include<stdio.h>
 /**
  *main - prints the specified text on to the standard output
  *
