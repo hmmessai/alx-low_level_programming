@@ -8,10 +8,10 @@ int main(void)
 {
 	unsigned int c = 48;
 
-	do{
+	do {
 		putchar(c);
+		putchar(44);
 		putchar(32);
-		putchar(0);
 		c++;
 	} while (c <= 57);
 	putchar(10);
