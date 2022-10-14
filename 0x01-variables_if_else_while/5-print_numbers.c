@@ -8,5 +8,6 @@ int main()
 {
 	for(char c = 48; c <= 57; c++)
 		putchar(c);
+	putchar(10);
 	return (0);
 }
