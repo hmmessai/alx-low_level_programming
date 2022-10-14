@@ -9,14 +9,13 @@ int main(void)
 	unsigned int a;
 	unsigned int b;
 	unsigned int c;
-	
 	for (a = 48; a <= 57; a++)
 	{
 		for (b = a + 1; b <= 57; b++)
 		{
 			for (c = b + 1; c <= 57; c++)
 			{
-				if (a != 57)
+				if (a != 56)
 				{
 					putchar(a);
 					putchar(b);
