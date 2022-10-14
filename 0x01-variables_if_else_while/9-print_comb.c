@@ -21,6 +21,6 @@ int main(void)
 			c++;
 		}
 		putchar(32);
-	} while (c <= 56);
+	} while (c <= 57);
 	return (0);
 }
