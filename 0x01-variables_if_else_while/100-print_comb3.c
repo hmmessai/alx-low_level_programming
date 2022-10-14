@@ -10,7 +10,7 @@ int main(void)
 	unsigned int d;
 	for (c = 48; c <= 57; c++)
 	{
-		for(d = c + 1; d < 57; d++)
+		for (d = c + 1; d <= 57; d++)
 		{
 			putchar(c);
 			putchar(d);
