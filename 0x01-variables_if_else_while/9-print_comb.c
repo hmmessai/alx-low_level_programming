@@ -9,11 +9,18 @@ int main(void)
 	unsigned int c = 48;
 
 	do {
-		putchar(c);
-		putchar(44);
+		if (c != 56)
+		{
+			putchar(c);
+			putchar(44);
+			c++;
+		}
+		else
+		{
+			putchar(c);
+			c++;
+		}
 		putchar(32);
-		++c;
 	} while (c <= 56);
-	putchar(c);
 	return (0);
 }
