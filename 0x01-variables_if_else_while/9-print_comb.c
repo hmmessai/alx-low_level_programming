@@ -16,4 +16,5 @@ int main(void)
 		c++;
 	} while (c <= 57);
 	putchar(10);
+	return (0);
 }
