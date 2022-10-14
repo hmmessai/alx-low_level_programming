@@ -13,7 +13,7 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	c = 65
+	c = 65;
 	while (c < 90)
 	{
 		putchar(c);
