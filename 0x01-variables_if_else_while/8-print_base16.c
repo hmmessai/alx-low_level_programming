@@ -13,4 +13,5 @@ int main(void)
 	for (c = 97; c <= 102; c++)
 		putchar(c);
 	putchar(10);
+	return (0);
 }
