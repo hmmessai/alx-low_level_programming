@@ -12,8 +12,8 @@ int main(void)
 		putchar(c);
 		putchar(44);
 		putchar(32);
-		c++;
-	} while (c < 57);
+		++c;
+	} while (c <= 57);
 	putchar(10);
 	return (0);
 }
