@@ -10,8 +10,9 @@ int main(void)
 
 	while (c <= 122)
 	{
-		putchar(c, stdout);
+		putchar(c);
 		c++;
 	}
 	putchar(10);
+	return (0);
 }
