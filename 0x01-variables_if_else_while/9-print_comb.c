@@ -9,7 +9,7 @@ int main(void)
 	unsigned int c = 48;
 
 	do {
-		if (c != 56)
+		if (c != 57)
 		{
 			putchar(c);
 			putchar(44);
