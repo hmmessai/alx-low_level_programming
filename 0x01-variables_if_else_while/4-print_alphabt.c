@@ -8,7 +8,7 @@ int main(void)
 {
 	char c = 97;
 
-	while (c >= 122 && c != 133 c != 101)
+	while (c >= 122 && c != 133 && c != 101)
 	{
 		putchar(c);
 		c++;
