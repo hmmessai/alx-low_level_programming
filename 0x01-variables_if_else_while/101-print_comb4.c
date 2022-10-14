@@ -15,11 +15,11 @@ int main(void)
 		{
 			for (c = b + 1; c <= 57; c++)
 			{
-				if (a != 56)
+				putchar(a);
+			       	putchar(b);
+				putchar(c);
+				if (a != 55)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
 					putchar(32);
 					putchar(44);
 				}
