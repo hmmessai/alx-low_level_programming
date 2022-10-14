@@ -20,8 +20,8 @@ int main(void)
 				putchar(c);
 				if (a != 55)
 				{
-					putchar(32);
 					putchar(44);
+					putchar(32);
 				}
 				else
 				{
