@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char c = 97;
+	unsigned char c = 97;
 
 	while (c >= 122 && c != 133 && c != 101)
 	{
