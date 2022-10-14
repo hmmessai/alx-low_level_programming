@@ -12,10 +12,15 @@ int main(void)
 	{
 		for (d = c + 1; d <= 57; d++)
 		{
-			putchar(c);
-			putchar(d);
-		       	putchar(44);
-		       	putchar(32);
+			if (c != 57)
+			{
+				putchar(c);
+				putchar(d);
+				putchar(44);
+				putchar(32);
+			}
+			else
+				putchar(10);
 	       	}
 	}
 	putchar(10);
