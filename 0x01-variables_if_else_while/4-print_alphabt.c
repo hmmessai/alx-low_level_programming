@@ -8,9 +8,10 @@ int main(void)
 {
 	unsigned char c = 97;
 
-	while (c <= 122 && c != 133 && c != 101)
+	while (c <= 122)
 	{
-		putchar(c);
+		if (c != 133 && c != 101)
+			putchar(c);
 		c++;
 	}
 	putchar(10);
