@@ -4,9 +4,11 @@
  *
  *Return: 0(Success)
  */
-int main()
+int main(void)
 {
-	for(char c = 48; c <= 57; c++)
+	char c;
+
+	for(c = 48; c <= 57; c++)
 		putchar(c);
 	putchar(10);
 	return (0);
