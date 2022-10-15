@@ -19,12 +19,19 @@ int main(void)
 			{
 				for (d = b + 1; d <= 57; d++)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(32);
-					putchar(c);
-					putchar(d);
-					putchar(44);
+					if (b != 57)
+					{
+						putchar(a);
+						putchar(b);
+						putchar(32);
+						putchar(c);
+						putchar(d);
+						putchar(44);
+					}
+					else
+					{
+						putchar(10);
+					}
 				}
 			}
 		}
