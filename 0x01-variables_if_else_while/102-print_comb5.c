@@ -9,6 +9,7 @@ int main(void)
 	unsigned int a;
 	unsigned int b;
 	unsigned int c;
+	unsigned int d;
 
 	for (a = 48; a <= 57; a++)
 	{
