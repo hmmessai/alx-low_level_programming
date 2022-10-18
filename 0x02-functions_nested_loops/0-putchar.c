@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- *main - prints putchar to the standard output
+ *main - prints _putchar to the standard output
  *
  *Return: 0(success)
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar(10);
+	char set[] = "_putchar\n";
+	int i = 0;
+
+	while(set[i] != '\0')
+	{
+		_putchar(set[i]);
+		i++;
+	}
 	return (0);
 }
