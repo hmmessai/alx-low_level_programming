@@ -2,9 +2,9 @@
 /**
  *main - computes the sum of all multiples of 3 or 5 under 1024
  *
- *Return: nothing
+ *Return: 0(success)
  */
-void main(void)
+int main(void)
 {
 	int i;
 	int sum = 0;
@@ -15,4 +15,5 @@ void main(void)
 			sum += i;
 	}
 	printf("%d\n",sum);
+	return (0);
 }
