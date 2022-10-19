@@ -4,12 +4,21 @@
  *
  *@n: the number to be evaluated to get its last digit
  *
- *Return: 0(success)
+ *Return: the value of the last digit
  */
 int print_last_digit(int n)
 {
-	int lstdgt = n % 10;
+	int last_digit;
 
-	_putchar(lstdgt + 48);
-	return (0);
+	last_digit = n % 10;
+	if(n >= 0)
+	{
+		_putchar(last_digit + 48);
+		return (last_digit);
+	}
+	else
+	{
+		_putchar(-last_digit + 48);
+		return (-last_digit);
+	}
 }
