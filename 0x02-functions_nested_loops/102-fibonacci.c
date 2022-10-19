@@ -12,10 +12,10 @@ int main(void)
 	unsigned long int k;
 
 	printf("%lu, %lu,", i, j);
-	while (count <= 47)
+	while (count <= 48)
 	{
 		k = i + j;
-		if (count != 46)
+		if (count != 48)
 			printf(" %lu,", k);
 		else
 			printf(" %lu\n", k);
