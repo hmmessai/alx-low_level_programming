@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int i = 1;
 	unsigned long int j = 2;
 	unsigned long int k = 0;
-	unsigned long int sum;
+	unsigned long int sum = j;
 
 	while (k < 4000000)
 	{
