@@ -9,7 +9,7 @@ void more_numbers(void)
 	int i;
 	int ones;
 	int tens;
-	int count;
+	int count = 1;
 
 	while (count <= 10)
 	{
@@ -28,7 +28,7 @@ void more_numbers(void)
 		_putchar(tens + '0');
 		_putchar(ones + '0');
 	}
-	putchar(10);
+	_putchar(10);
 	count++;
 	}
 }
