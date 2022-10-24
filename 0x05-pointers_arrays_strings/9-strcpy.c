@@ -8,6 +8,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int count = 0;
+	int i;
 
 	while (*src != '\0')
 		count++;
