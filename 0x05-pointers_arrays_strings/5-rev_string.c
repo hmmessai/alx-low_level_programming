@@ -13,9 +13,9 @@ void rev_string(char *s)
 		count++;
 	count--;
 	while (count >= 0)
-       	{
-       		s[i] = s[count];
-       		count--;
+	{
+		s[i] = s[count];
+		count--;
 		i++;
-       	}
+	}
 }
