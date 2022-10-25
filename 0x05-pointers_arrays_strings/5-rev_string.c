@@ -11,8 +11,8 @@ void rev_string(char *s)
 
 	while (*(s + count) != '\0')
 		count++;
-	count--;
-	for (i = 0; i <= count; i++)
+	strl = --count;
+	for (i = 0; i <= strl; i++)
 	{
 		while (count >= 0)
 		{
@@ -20,5 +20,4 @@ void rev_string(char *s)
 			count--;
 		}
 	}
-	_putchar('\n');
 }
