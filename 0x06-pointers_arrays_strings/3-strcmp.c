@@ -12,12 +12,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[count] != '\0' && s2[count] != '\0')
 	{
-		if (s1[count] > s2[count])
-			diff++;
-		else if (s1[count] < s2[count])
-			diff--;
-		else
-			diff = diff;
+		diff = diff + (s1[count] - s2[count]);
 		count++;
 	}
 	return (diff);
