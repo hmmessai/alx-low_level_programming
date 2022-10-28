@@ -10,7 +10,7 @@ int _strcmp(char *s1, char *s2)
 	int diff = 0;
 	int count = 0;
 
-	while (s1[count] != '\0' && s2[count] != '\0')
+	while (s1[count] != '\0' || s2[count] != '\0')
 	{
 		diff = diff + (s1[count] - s2[count]);
 		count++;
