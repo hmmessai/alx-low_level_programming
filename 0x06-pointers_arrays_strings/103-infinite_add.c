@@ -23,12 +23,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (i = 0; i < count1; i++)
 	{
 		x = n1[i] - 48;
-		num1 += x * 10 * * i;
+		num1 += x * pow(10, i);
 	}
 	for (j = 0; j < count2; j++)
 	{
 		y = n2[j] - 48;
-		num2 += y * 10 * * j;
+		num2 += y * pow(10, i);
 	}
 	if (size_r > count1 + 1 || size_r > count2 + 1)
 	{
