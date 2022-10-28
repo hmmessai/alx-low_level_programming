@@ -13,10 +13,10 @@ char *cap_string(char *s)
 	{
 		for (j =0;j < 14; j++)
 		{
-			if (s[i] == tchar[j] || i == 0)
+			if (s[i] >= 97 && s[i] <= 122)
 			{
-				if (s[i + 1] >= 97 && s[i + 1] <= 122)
-					s[i + 1] = s[i + 1] - 32;
+				if (s[i -1] == tchar[j] || i == 0)
+					s[i] -= 32;
 				break;
 			}
 		}
