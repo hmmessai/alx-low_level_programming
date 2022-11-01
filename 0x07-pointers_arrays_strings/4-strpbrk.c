@@ -11,11 +11,9 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int i = 0;
 	unsigned int j;
 
-	while (accept[count])
-		count++;
 	while (s[i])
 	{
-		for (j = 0; j < count; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 				return (s + 1);
