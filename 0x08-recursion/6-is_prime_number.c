@@ -11,7 +11,7 @@ int isDivisible(int num, int div)
 		return (0);
 	if (div == num / 2)
 		return (1);
-	return isDivisible(num, div + 1);
+	return (isDivisible(num, div + 1));
 }
 
 /**
