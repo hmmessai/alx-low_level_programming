@@ -8,8 +8,6 @@
 int main(int argc, char *argv[])
 {
 	int result;
-	int __attribute__((__unused__)) num1;
-	int __attribute__((__unused__)) num2;
 
 	if (argc != 3)
 	{
