@@ -3,6 +3,7 @@
  *main - the number of cents to give back for a given amount of cent
  *@argc: the argument count
  *@argv: the amount of cent to be given as change
+ *Return: 0(success) 1(error)
  */
 int main(int argc, char *argv[])
 {
