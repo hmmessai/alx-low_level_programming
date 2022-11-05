@@ -8,17 +8,15 @@
 int main(int argc, char *argv[])
 {
 	int result;
-	int num1;
-	int num2;
+	int __attribute__((__unused__)) num1;
+	int __attribute__((__unused__)) num2;
 
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
-	num1 = argv[1] - 48;
-	num2 = argv[2] - 48;
-	result = num1 * num2;
+	result = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", result);
 	return (0);
 }
