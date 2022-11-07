@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 	if (s == NULL)
 	{
 		fprintf(stderr, "Error in memory allocation\n");
-		return (1);
+		return (NULL);
 	}
 	if (size == 0)
 		return ('\0');
