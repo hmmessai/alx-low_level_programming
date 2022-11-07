@@ -12,6 +12,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int count2 = 0;
 	unsigned int i = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (s1[i])
 	{
 		count1++;
@@ -24,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	i = 0;
-	s = malloc((count1 + count2) * sizeof(char));
+	s = malloc((count1 + count2 + 1) * sizeof(char));
 	if (s == NULL)
 		fprintf(stderr, "Error in memory allocation");
 	while (i < count1)
