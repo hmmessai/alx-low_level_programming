@@ -30,7 +30,10 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 	s = malloc((count1 + count2 + 1) * sizeof(char));
 	if (s == NULL)
+	{
 		fprintf(stderr, "Error in memory allocation");
+		return (1);
+	}
 	while (i < count1)
 	{
 		s[i] = s1[i];
