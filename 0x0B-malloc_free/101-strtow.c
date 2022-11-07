@@ -7,6 +7,7 @@
 char **strtow(char *str)
 {
 	char **s;
+	int i, j;
 
 	for (i = j = 0; str[i] != '\n'; i++)
 	{
