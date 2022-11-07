@@ -31,8 +31,9 @@ char *str_concat(char *s1, char *s2)
 	s = malloc((count1 + count2 + 1) * sizeof(char));
 	if (s == NULL)
 	{
+		free(s);
 		fprintf(stderr, "Error in memory allocation");
-		return ((char *)1);
+		return (NULL);
 	}
 	while (i < count1)
 	{
