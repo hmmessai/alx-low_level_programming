@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 	{
 		fprintf(stderr, "Error in memory allocation");
-		return (1);
+		return ((char *)1);
 	}
 	while (i < count1)
 	{
