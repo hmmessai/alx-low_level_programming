@@ -14,4 +14,5 @@ char **strtow(char *str)
        		for (j = 0; str[j] == ' '; i++, j++)
        			s[i][j] = str[i];
 	}
+	return (s);
 }
