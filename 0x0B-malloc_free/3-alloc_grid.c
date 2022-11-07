@@ -25,11 +25,14 @@ int **alloc_grid(int width, int height)
 		if (arr[i] == NULL)
 		{
 			fprintf(stderr, "Error in memory allocation");
-			free(arr[i]);
-			return (NULL);
+			for (i--; i >= 0; i--)
+				free(arr[i]);
+			free(arr);
+		       	return (NULL);
 		}
+	}
+	for (i = 0; i < height; i++)
 		for (j = 0; j < width; j++)
 			arr[i][j] = 0;
-	}
 	return (arr);
 }
