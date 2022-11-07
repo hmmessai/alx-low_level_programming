@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 	s = malloc(sizeof(char) * size);
 	if (s == NULL)
 	{
-		fprintf(strerr, "Error in memory allocation\n");
+		fprintf(stderr, "Error in memory allocation\n");
 		return (1);
 	}
 	if (size == 0)
