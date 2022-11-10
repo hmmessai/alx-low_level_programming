@@ -15,10 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (count1 = 0; s1 != '\0'; count1++)
-		;
-	for (count2 = 0; s2 != '\0'; count2++)
-		;
+	while (s1[count1] != '\0')
+		count1++;
+	while (s2[count2] != '\0')
+		count2++;
 	if (n > count2)
 		n = count2;
 	fullen = count1 + n;
