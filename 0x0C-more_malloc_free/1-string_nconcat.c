@@ -17,21 +17,29 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	while (s1[count1] != '\0')
 		count1++;
+
 	while (s2[count2] != '\0')
 		count2++;
+
 	if (n > count2)
 		n = count2;
+
 	fullen = count1 + n;
+
 	s = malloc(fullen + 1);
+
 	if (s == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= fullen; i++)
+
+	for (i = 0; i < fullen; i++)
 		if (i < count1)
 			s[i] = s1[i];
 		else
 			s[i] = s2[i - count1];
+
 	s[i] = '\0';
+
 	return (s);
 }
