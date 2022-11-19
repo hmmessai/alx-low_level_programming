@@ -11,6 +11,7 @@ char *_strcpy(char *dest, char *src);
  * @owner: the name of the owner
  *
  * Return: the pointer to the new dog variable
+ * 	NULL if unsuccessful
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
