@@ -16,10 +16,16 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-typedef struct op
+struct op
 {
   char op;
   int (*f)(int a, int b)
-} op_t;
+};
+
+/**
+ * op_t - typedef for struct op
+ */
+
+typedef struct op op_t;
 
 #endif
