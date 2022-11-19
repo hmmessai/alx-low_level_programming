@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int, int);
 struct op
 {
   char op;
-  int (*f)(int a, int b)
+  int (*f)(int a, int b);
 };
 
 /**
