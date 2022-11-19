@@ -3,15 +3,17 @@
 
 /**
  * File: dog.h
- * Description: Header file containing a struct
- * 		that define 3 elements
+ * Description: Header file that define new type struct dog
  */
 
 /**
  * struct dog - A new structure describing a dog
  * @name: the name of the dog
  * @age; the age of the dog
- * @owner: the owners name 
+ * @owner: the owner's name 
+ *
+ * Description: struct called "dog" that stores its name, its age
+ * 		and the name of its owner
  */
 
 struct dog
