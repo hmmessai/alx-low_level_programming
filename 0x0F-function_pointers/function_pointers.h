@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
 
 void print_name(char *name, void (*f)(char *));
 int _putchar(char c);
