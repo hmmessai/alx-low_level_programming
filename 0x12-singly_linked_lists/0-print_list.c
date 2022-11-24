@@ -22,19 +22,19 @@ size_t print_list(const list_t *h)
 
 		if (a->next != NULL) 
 		{
-			if (a->str == NULL)
-                        	printf("[0] (nil)\n");
+			if (a->str != NULL)
+                        	printf("[%d] %s\n", a->len, a->str);
 			else
-				printf("[%d] %s\n", a->len, a->str);
+				printf("[0] (nil)\n");
 			a = a->next;
 			nodeTotal++;
 		}
 		else
 		{
 			if (a->str == NULL)
-                                printf("[0] (nil)");
-                        else
                                 printf("[%d] %s\n", a->len, a->str);
+                        else
+                                printf("[0] (nil)\n");
 
 			nodeTotal++;
 			return(nodeTotal);
