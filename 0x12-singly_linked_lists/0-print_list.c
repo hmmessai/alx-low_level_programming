@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 
 
 	if (h->next == NULL)
-                return (1);
+		return (1);
 
 	a = h->next;
 	nodeTotal = 1;
