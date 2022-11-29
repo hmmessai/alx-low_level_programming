@@ -15,6 +15,9 @@ listint_t *reverse_listint(listint_t **head)
 
 	rhead = *head;
 
+	if (rhead == NULL)
+		return (0);
+
 	while (rhead != NULL)
 	{
 		temp = rhead;
