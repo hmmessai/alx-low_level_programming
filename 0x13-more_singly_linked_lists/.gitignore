@@ -3,3 +3,4 @@ test.c
 _*
 *.exe
 *.swp
+*main.c
