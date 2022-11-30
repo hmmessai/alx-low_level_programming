@@ -18,7 +18,7 @@ void free_listint2(listint_t **head)
 
 	if (temp == NULL)
 	{
-		printf("Freed !\n");
+		*head = NULL;
 		return;
 	}
 
