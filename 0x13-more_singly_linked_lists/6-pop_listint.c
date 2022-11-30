@@ -24,4 +24,5 @@ int pop_listint(listint_t **head)
 		return (h->n);
 
 	}
+	return (0);
 }
