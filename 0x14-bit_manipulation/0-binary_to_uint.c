@@ -21,13 +21,13 @@ unsigned int binary_to_uint(const char *b)
 		for (i = 0; b[i]; i++)
 			len++;
 
-		for (i = len; i < 0; i--)
+		for (--len; len >= 0; len--)
 		{
-			if (b[i] != '0' || b[i] != '1')
+			if (b[len] != '0' && b[len] != '1')
 				return (0);
-			if (b[len] == 48)
+			if (b[len] == '0')
 				bnum = 0;
-			if (b[len] == 49)
+			if (b[len] == '1')
 				bnum = 1;
 
 			num += power(2, n) * bnum;
@@ -36,6 +36,7 @@ unsigned int binary_to_uint(const char *b)
 
 		return (num);
 	}
+
 	return (0);
 }
 
