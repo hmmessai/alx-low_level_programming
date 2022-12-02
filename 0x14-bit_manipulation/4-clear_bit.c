@@ -7,7 +7,7 @@
  * @index: the index to set the bit to 0
  *
  * Return: 1 if it worked
- * 	-1 if an error occured
+ *	-1 if an error occured
  */
 
 

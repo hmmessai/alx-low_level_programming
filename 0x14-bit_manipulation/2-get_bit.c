@@ -7,7 +7,7 @@
  * @index: the index of the bit to get
  *
  * Return: value of the bit at index
- * 	-1 if an error occured
+ *	-1 if an error occured
  */
 
 int get_bit(unsigned long int n, unsigned int index)
@@ -20,10 +20,10 @@ int get_bit(unsigned long int n, unsigned int index)
 	for (i = 0; i <= 63; i++)
 	{
 		if (i == index)
-			return(n & 1);
+			return (n & 1);
 		n >>= 1;
 	}
-	
+
 	return (-1);
 
 }
