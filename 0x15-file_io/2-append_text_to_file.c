@@ -27,7 +27,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		for (letters = 0; text_content[letters], letters++)
+		for (letters = 0; text_content[letters]; letters++)
 			;
 
 		bytes_wrote = write(fd, text_content, letters);
