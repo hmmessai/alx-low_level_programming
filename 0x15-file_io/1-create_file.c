@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 	for (letters = 0; text_content[letters]; letters++)
 		;
 
-	bytes_wrote = write(fd, text_content, );
+	bytes_wrote = write(fd, text_content, letters);
 
 	if (bytes_wrote == -1)
 		return (-1);
