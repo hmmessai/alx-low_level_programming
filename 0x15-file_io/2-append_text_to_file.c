@@ -31,7 +31,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			;
 
 		bytes_wrote = write(fd, text_content, letters);
-		
+
 		if (bytes_wrote == -1)
 			return (-1);
 
