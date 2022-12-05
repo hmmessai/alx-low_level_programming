@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _cp - 
+ * error_file - checks if files can be opened
  *
- *
- *
+ * @file_from: file_from
+ * @file_to: file_to
+ * @argv: arguments vector
+ * Return: void
  */
-
 
 void error_file(int file_from, int file_to , char *argv[])
 {
@@ -22,7 +23,15 @@ void error_file(int file_from, int file_to , char *argv[])
 	}
 }
 
-int main(int argc, char argv[])
+/**
+ * main - copies contents of one file to another file
+ *
+ * @argc: number of arguments
+ * @argv: arguments vector
+ * Return: Alwaysgcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-cp.c -o cp 0
+ */
+
+int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
 	ssize_t nchars, nwr;
@@ -44,7 +53,7 @@ int main(int argc, char argv[])
 	{
 		nchars = read(file_from, buf, 1024);
 		if (nchars == -1)
-			error_file(-1, 0, 1024);
+			error_file(-1, 0, argv);
 
 		nwr = write(file_to, buf, nchars);
 
@@ -60,7 +69,7 @@ int main(int argc, char argv[])
 		exit(100);
 	}
 
-	err_close = close(file_to):
+	err_close = close(file_to);
 		if (err_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
