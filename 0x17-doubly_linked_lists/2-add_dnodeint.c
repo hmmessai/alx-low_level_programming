@@ -5,7 +5,7 @@
  * @head: head of the list
  * @n: the value the new node will hold
  * Return: the address of the new element
- * 	NULL if it failed
+ *	NULL if it failed
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -20,8 +20,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	newNode->prev = NULL;
 	newNode->next = temp;
 	*head = newNode;
-
-	
 
 	return (newNode);
 }
