@@ -1,31 +1,27 @@
-#ifndef LCALC_H
+#ifndef CALC_H
 #define CALC_H
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- *struct op - Struct op
- *@op: the operator
- *@f: the function associated
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
  */
+typedef struct op
+{
+    char *op;
+    int (*f)(int a, int b);
+} op_t;
 
 int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
+int op_sub(int, int);
+int op_mul(int, int);
+int op_div(int, int);
+int op_mod(int, int);
 int (*get_op_func(char *s))(int, int);
-
-struct op
-{
-  char op;
-  int (*f)(int a, int b);
-};
-
-/**
- * op_t - typedef for struct op
- */
-
-typedef struct op op_t;
 
 #endif

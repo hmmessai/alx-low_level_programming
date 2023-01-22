@@ -1,42 +1,37 @@
 #include "3-calc.h"
 
 /**
- *main - 
- *@argc: the argument count
- *@argv: the arguments used
- *Return: 0
+ * main - performs calculation
+ * @argc: the argument count
+ * @argv: the argument vector
+ * Return: 
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-
-	int a, b;
-
-	int (*operation)(int, int);
+	int a = atoi(argv[1]);
+	int b = atoi(argv[3]);
+	char *op = argv[2];
 
 	if (argc != 4)
 	{
-		printf("Error\n");
+		printf("Error incorrect argumen\n");
 		exit(98);
 	}
-	if (argv[2] == NULL || argv[2][1] != '\0')
+
+	if (!get_op_func(op))
 	{
-		printf("Error\n");
+		printf("Error incorrect operator\n");
 		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	operation = get_op_func(argv[2]);
-
-	if (operation == NULL)
+	/*if (!get_op_func(op)(a, b))
 	{
-		printf("Error\n");
-		exit(99);
-	}
-  
-	printf("%d\n", operation(a,b));
+		printf("Error division by zero\n");
+		exit(100);
+	}*/
+
+	printf("%d\n", get_op_func(op)(a, b));
 
 	return (0);
 }
