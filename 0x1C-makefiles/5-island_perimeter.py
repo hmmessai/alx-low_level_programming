@@ -1,6 +1,7 @@
 #!usr/bin/python3
 """Defines island_perimeter function"""
 
+
 def island_perimeter(grid):
     """Computes islands perimeter from grid.
 
