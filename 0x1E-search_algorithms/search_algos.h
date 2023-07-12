@@ -1,3 +1,6 @@
+#ifndef SEARCH_ALGO_H
+#define SEARCH_ALCO_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
